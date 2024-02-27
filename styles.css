@@ -1,0 +1,149 @@
+* {
+  text-align: center;
+  font-family: Verdana;
+  color: #cccccc
+}
+
+header {
+  position: fixed;
+  width: 102%;
+  margin-left: -8px;
+  height: 70px;
+  margin-top: -8px;
+  background: linear-gradient(-90deg, #0d2e63 50%, #2d6d8d, #419cbf);
+  z-index: 1
+}
+
+#navbar p {
+  font-size: 25px;
+  position: absolute;
+  right: 70px;
+  top: -1px;
+}
+
+#navbar p a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px
+}
+
+#navbar p a:active {
+  color: gray
+}
+
+#welcome-section {
+  background: linear-gradient(210deg, #02171a 50%, #450505, #870101);
+  padding-top: 86vh;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+#welcome-section h1 {
+  position: relative;
+  top: -50vh;
+}
+
+#welcome-section h1 .s1 {
+  font-size: 55px;
+  font-family: Helvetica;
+  letter-spacing: 3px;
+}
+
+#welcome-section h1 .s2 {
+  font-family: arial;
+  position: relative;
+  top: 20px;
+  letter-spacing: 6px;
+  font-style: oblique;
+  color: #b32020
+}
+
+#projects {
+  background-color: #0d2e63;
+  padding-top: 86vh;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -20px;
+
+}
+
+#projects h1,
+#projects hr {
+  position: relative;
+  top: -72vh;
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #ebebed;
+}
+
+#projects hr {
+  width: 65vh;
+  border-color: #ebebed;
+  top: -75vh;
+}
+
+#projects .prflex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative;
+  top: -65vh;
+  background-color: #0d2e63
+}
+
+.pr1,
+.pr2 {
+  background-color: #0d2e63;
+  margin: 0px;
+  padding: 0px;
+}
+
+#projects img {
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  border-radius: 50px
+}
+
+#projects a {
+  text-decoration: underline overline;
+  font-size: 30px;
+}
+
+#contact {
+  margin: -42px -8px -10px -8px;
+  padding: 0;
+  height: 75vh;
+  background-color: #021129;
+}
+
+#contact * {
+  position: relative
+}
+
+#contact div {
+  bottom: -25vh
+}
+
+#contact h2 {
+  font-family: helvetica;
+  font-size: 50px
+}
+
+#contact a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 50px;
+  right: 30px;
+}
+
+.copyright {
+  top: 200px
+}
+
+#contact img {
+  left: 20;
+  top: 8
+}
+
+@media (max-width: 1000px) {}
