@@ -1,0 +1,38 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 900px;
+    height: 900px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.menu{
+    background-color: #333;
+    border: 5px solid #000;
+    color: #fff;
+    padding: 10px;
+}
+.corpo{
+    background-color: #fff;
+    border: 5px solid #008000;
+    padding: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+.rodape{
+    border: solid;
+    background-color: #333;
+    border-width: 5px 5px 5px 5px;
+    border-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.copy{
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
