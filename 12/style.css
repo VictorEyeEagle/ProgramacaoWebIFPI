@@ -1,0 +1,16 @@
+.pessoa {
+    color: green;
+    cursor: pointer;
+}
+
+.pessoa[data-idade='35'] {
+    color: purple;
+}
+
+.pessoa::after {
+    content: ' - Informação';
+}
+
+.pessoa::before {
+    content: 'Pessoa: ';
+}
