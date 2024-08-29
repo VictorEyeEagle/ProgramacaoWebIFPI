@@ -1,0 +1,41 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Margens e padding dos botões */
+.button {
+    display: inline-flex;
+    margin: 15px;
+}
+
+/* Estilização de contorno */
+.dividir {
+    border: 2px solid #6c757d;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Ajuste da tabela */
+table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}

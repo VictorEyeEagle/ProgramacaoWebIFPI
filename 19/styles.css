@@ -1,0 +1,47 @@
+/* Estilo geral */
+.profile-container {
+    background-color: #e0e0e0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Estilo do card de perfil */
+.profile-card {
+    background-color: #ffffff;
+    max-width: 100%;
+    width: 90%;
+    margin: 25px auto;
+    border: 2px solid #ccc;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Estilo da imagem de perfil */
+.profile-img {
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+    margin: 15px auto;
+}
+
+/* Estilo do nome e descrição */
+.profile-card h4 {
+    margin-top: 15px;
+}
+
+.profile-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilo da tabela de informações */
+.profile-card table {
+    margin: 25px 0;
+}
+
+/* Estilo do botão */
+.profile-card .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+}
