@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Paleta de Cores</h1>
+
+        <div id="coresDiv">
+            <button class="btn btn-success" onclick="exibirCores()">Ver Cores</button>
+        </div>
+
+        <div class="mt-3">
+            <button class="btn btn-warning" onclick="selecionarCor()">Selecionar Cor pelo Índice</button>
+        </div>
+    </div>
+
+    <script>
+        var cores = ["Vermelho", "Azul", "Verde", "Amarelo"];
+
+        function exibirCores() {
+            const coresDiv = document.getElementById("coresDiv");
+
+            // Limpa o conteúdo antes de exibir as cores
+            coresDiv.innerHTML = '<button class="btn btn-success" onclick="exibirCores()">Ver Cores</button>';
+
+            cores.forEach(function (cor) {
+                coresDiv.innerHTML += "<p>" + cor + "</p>";
+            });
+        }
+
+        function selecionarCor() {
+            var indice = parseInt(prompt("Informe o índice da cor (0 a " + (cores.length - 1) + "):"));
+            if (indice >= 0 && indice < cores.length) {
+                alert("A cor na posição " + indice + " é: " + cores[indice]);
+            } else {
+                alert("Índice inválido.");
+            }
+        }
+    </script>
+</body>
+
+</html>
