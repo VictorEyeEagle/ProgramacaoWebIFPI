@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Licenciatura em Computação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Instituto_Federal_do_Piau%C3%AD_-_Marca_Vertical_2015.svg/512px-Instituto_Federal_do_Piau%C3%AD_-_Marca_Vertical_2015.svg.png"
+            alt="Logotipo IFPI" id="ifpi-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o Curso</a></li>
+                <li><a href="corpo.html">Corpo Docente</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo ao Curso de Licenciatura em Computação</h2>
+            <p>Conheça mais sobre o curso e fique por dentro das novidades.</p>
+        </section>
+        <section>
+            <h2>Introdução ao Curso</h2>
+            <p>A Licenciatura em Computação no IFPI é voltada para a formação de professores aptos a ensinar computação
+                na Educação Básica. O curso é multidisciplinar, oferecendo uma sólida base teórica e prática, com foco
+                no desenvolvimento de competências pedagógicas e técnicas. Além de preparar o aluno para a docência, ele
+                também permite a atuação em áreas como desenvolvimento de software, uso e avaliação de tecnologias
+                educacionais, e pesquisa científica.</p>
+            <p>O objetivo principal é formar professores para atuar na
+                Educação Básica, capacitando-os a ensinar disciplinas relacionadas à informática e tecnologia. O curso
+                dura aproximadamente 4 anos, ou seja, 8 semestres, e oferece uma formação multidisciplinar que combina
+                áreas técnicas de computação com metodologias pedagógicas.</p>
+            <article>
+                <h3>Alta Qualificação do Corpo Docente</h3>
+                <p>Professores especializados tanto em áreas pedagógicas quanto tecnológicas.</p>
+            </article>
+            <article>
+                <h3>Projetos de Extensão e Inovação</h3>
+                <p>Os alunos participam de iniciativas que integram novas tecnologias no ensino, promovendo eventos de
+                    educação,
+                    robótica e programação.</p>
+            </article>
+        </section>
+        <br>
+        <section id="destaques">
+            <h2>Destaques Recentes e Novidades</h2>
+            <div class="news-gallery">
+                <button id="prev" class="nav-button">&#10094;</button>
+                <div class="news-container">
+                    <article class="news-item">
+                        <h3>Acontece no IFPI</h3>
+                        <p>Nesta edição do Acontece no IFPI, falamos da 21º Semana Nacional de Ciência e Tecnologia, dos
+                            10 anos do Campus Cocal, da Especialização em Letras/Inglês EaD do Campus Campo Maior e da
+                            exposição "Povos Indígenas do Piauí", no Campus Teresina Central. Assista ao vídeo completo,
+                            curta e compartilhe.</p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Semana de Tecnologia e Educação</h3>
+                        <p>Participe da Semana de Tecnologia e Educação do IFPI, onde serão discutidos os principais
+                            avanços tecnológicos no ensino e como a computação pode transformar o ambiente educacional.
+                        </p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Workshop de Desenvolvimento de Software</h3>
+                        <p>Os alunos participaram de um workshop prático de desenvolvimento de software utilizando
+                            metodologias ágeis, ampliando as suas habilidades técnicas e colaborativas.</p>
+                    </article>
+                </div>
+                <button id="next" class="nav-button">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Curso de Licenciatura em Computação - IFPI</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.news-item');
+        const totalItems = items.length;
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateGallery();
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateGallery();
+        });
+
+        function updateGallery() {
+            const newsContainer = document.querySelector('.news-container');
+            const width = items[0].offsetWidth;
+            newsContainer.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+    </script>
+</body>
+
+</html>
